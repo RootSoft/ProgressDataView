@@ -1,15 +1,14 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
 
 android {
     compileSdkVersion 26
 
-
-
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 14
         targetSdkVersion 26
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.3"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -35,3 +34,31 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
+
+ext {
+    bintrayRepo = 'ProgressDataView'
+    bintrayName = 'progressdataview'
+
+    publishedGroupId = 'com.rootsoft.progressdataview'
+    libraryName = 'progressdataview'
+    artifact = 'progressdataview'
+
+    libraryDescription = 'A view to easily switch between loading, empty, data and error states in your app.'
+
+    siteUrl = 'https://github.com/RootSoft/ProgressDataView'
+    gitUrl = 'https://github.com/RootSoft'
+
+    libraryVersion = '1.0.3'
+
+    developerId = 'RootSoft'
+    developerName = 'Tomas Verhelst'
+    developerEmail = 'tomasverhelst@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
