@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 
 /**
- * A container view to change between different states: Loading, Content, Empty and Error.
+ * A view to change between different states: Loading, Content, Empty and Error.
  *
  * Created by Tomas Verhelst.
  */
