@@ -13,7 +13,7 @@ ProgressDataView is a view to easily switch between loading, empty, data and err
 ---
 
 ```
-compile 'com.rootsoft.progressdataview:progressdataview:1.0.2'
+compile 'com.rootsoft.progressdataview:progressdataview:1.0.3'
 ```
 
 ## Usage
